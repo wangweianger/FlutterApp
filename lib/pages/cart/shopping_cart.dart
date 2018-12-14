@@ -12,7 +12,9 @@ class __SgoppingCartState extends State<SgoppingCart>{
 				appBar: AppBar(
 					title: Text('My first app.'),
 				),
-				body: new Text('User Center Pages!'),
+				body:new Center(
+                    child: new Text('User Center Pages!'),
+                ), 
 			),
 		);
 	}

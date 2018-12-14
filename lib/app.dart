@@ -37,7 +37,7 @@ class _MyAppBarState extends State<MyAppBar> {
 					icon: Icon(Icons.shopping_cart,size:35.0), title: new Text('购物车')
 				),
 				new BottomNavigationBarItem(
-					icon: Icon(Icons.person,size:35.0), title: new Text('订单')
+					icon: Icon(Icons.assignment_ind,size:32.0), title: new Text('订单')
 				),
                 new BottomNavigationBarItem(
 					icon: Icon(Icons.person,size:35.0), title: new Text('我的')
@@ -45,15 +45,13 @@ class _MyAppBarState extends State<MyAppBar> {
 			],
 			type: BottomNavigationBarType.fixed,
 			currentIndex: _currentIndex,
-			iconSize: 24.0,
+			iconSize: 35.0,
 			onTap: (int index) {
 				setState((){
-					print(index);
 					// _navigationViews[_currentIndex].controller.reverse();
 					_currentIndex = index;
 					// _navigationViews[_currentIndex].controller.forward();
 					_currentPage = _pageList[_currentIndex];
-					print(_pageList);
 				});
 			},
 		);
