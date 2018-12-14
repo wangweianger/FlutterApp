@@ -46,11 +46,10 @@ class _MyAppBarState extends State<MyAppBar> {
 			type: BottomNavigationBarType.fixed,
 			currentIndex: _currentIndex,
 			iconSize: 35.0,
+            fixedColor:Colors.red,
 			onTap: (int index) {
 				setState((){
-					// _navigationViews[_currentIndex].controller.reverse();
 					_currentIndex = index;
-					// _navigationViews[_currentIndex].controller.forward();
 					_currentPage = _pageList[_currentIndex];
 				});
 			},
