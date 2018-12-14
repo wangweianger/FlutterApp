@@ -1,16 +1,13 @@
-# myapp
+# Lean Flutter and made make an App Demo.
 
-A new Flutter project.
+Learn to use Flutter basic grammar. make an simple App.
+
 
 ## Getting Started
+```
+git clone https://github.com/wangweianger/FlutterApp.git
 
-This project is a starting point for a Flutter application.
+install packages
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+flutter run
+```
