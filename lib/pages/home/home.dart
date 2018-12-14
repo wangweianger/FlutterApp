@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'swiper.dart';
+import 'goods_item.dart';
 
 import 'data.dart';
 
@@ -18,11 +19,36 @@ class __HomePageState extends State<HomePage>{
 				appBar: AppBar(
 					title: Text('Home Page'),
 				),
-				body:new Container(
-                    height:180.0,
-                    child:new HomeSwiper(bannerList:bannerList),
+				body:new Column(
+                    children: <Widget>[
+                        // banner
+                        new Container(
+                            height:180.0,
+                            child:new HomeSwiper(bannerList:bannerList),
+                        ),
+                        // list
+                        new ItemList(),
+                    ],
                 ),
-			),
-		);
+		    ),
+        );
 	}
+}
+
+// 商品列表
+class ItemList extends StatefulWidget {
+    @override
+	State<ItemList> createState() => new __ItemListState();
+}
+class __ItemListState extends State<ItemList>{
+    @override
+	Widget build(BuildContext context) {
+        List<Widget> list = [];
+        for (var i = 0; i < itemListDatas.length; i++) {
+            list.add(new Item(item:itemListDatas[i]));
+        }
+        return new Column(
+            children: list,
+        );
+    }
 }
