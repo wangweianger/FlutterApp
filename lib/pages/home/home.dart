@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
-
-class Index extends StatelessWidget {
+class HomePage extends StatefulWidget {
 	@override
-	Widget build (BuildContext context) {
+	State<HomePage> createState() => new __HomePageState();
+}
+class __HomePageState extends State<HomePage>{
+	@override
+	Widget build(BuildContext context) {
 		return new MaterialApp(
-			title:'Index',
-			home: new Center(
-				child:new Text('首页!')
-			)
+			home:new Scaffold(
+				appBar: AppBar(
+					title: Text('Home Page'),
+				),
+				body:new Center(
+                    child: new Text('Home page! Come on.'),
+                ),
+			),
 		);
 	}
 }
