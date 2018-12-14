@@ -1,7 +1,5 @@
-# Lean Flutter and made make an App Demo.
-
+# Lean Flutter and make an App Demo.
 Learn to use Flutter basic grammar. make an simple App.
-
 
 ## Getting Started
 ```
@@ -11,3 +9,12 @@ install packages
 
 flutter run
 ```
+
+## Flutter - Beautiful native apps in record time
+https://flutter.io/
+
+## Flutter中文网
+https://flutterchina.club/
+
+##  Flutter icons reference link.
+https://material.io/tools/icons/?style=baseline
