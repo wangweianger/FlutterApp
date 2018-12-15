@@ -47,8 +47,13 @@ class __ItemListState extends State<ItemList>{
         for (var i = 0; i < itemListDatas.length; i++) {
             list.add(new Item(item:itemListDatas[i]));
         }
-        return new Column(
-            children: list,
-        );
+        return new Container(
+            height:500.0,
+            child: ListView(
+                shrinkWrap: true, 
+                children: list,
+            )
+        ); 
+        
     }
 }
