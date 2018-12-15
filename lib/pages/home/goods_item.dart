@@ -81,6 +81,8 @@ class Item extends StatelessWidget {
                                                             child: new Icon(Icons.shopping_cart,color:Colors.white),
                                                             shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                                                             onPressed: () {
+                                                                print(MediaQuery.of(context).size.width);
+                                                                print(MediaQuery.of(context).size.height);
                                                                 print(item);
                                                             },
                                                         ),
