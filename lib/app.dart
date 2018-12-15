@@ -59,7 +59,7 @@ class _MyAppBarState extends State<MyAppBar> {
                 primarySwatch: Colors.red,
             ),
 			home:new Scaffold(
-				body: new Center(
+				body: new Container(
 					child:_currentPage,
 				),
 				bottomNavigationBar: bottomNavigationBar,
