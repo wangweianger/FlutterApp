@@ -89,6 +89,9 @@ class Item extends StatelessWidget {
                                                             new Text("¥${item['costPrice']}",style:TextStyle(
                                                                 fontSize: 15.0,
                                                                 color:Colors.grey,
+                                                                decoration: TextDecoration.lineThrough,
+                                                                decorationStyle: TextDecorationStyle.solid,
+                                                                decorationColor: Colors.grey,
                                                             )),
                                                         ],
                                                     ),
