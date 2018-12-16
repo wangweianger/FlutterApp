@@ -8,6 +8,26 @@ class Item extends StatelessWidget {
 
     @override
     Widget build(BuildContext context) {
+        double wdith = 140.0;
+        double height = 140.0;
+        // item 左侧图片层叠
+        List<Widget> stackImg = [new Image.network(item['pImg'],width:wdith,height:height,)];
+        if(!item['label'].isEmpty){
+            stackImg.add(new Positioned(
+                left:10.0,
+                top:0,
+                child: new Image.network(
+                    'https://img.allpyra.com/7acb5470-9db5-4894-8859-daaaf9e65497.png',
+                    width:40.0,
+                    height:44.0,
+                ),
+            ));
+            stackImg.add(new Positioned(
+                left:16.0,
+                top:6.0,
+                child: new Text(item['label'],style:TextStyle(color: Colors.white,fontSize: 14.0)),
+            ));
+        }
         return new Container(
             padding:EdgeInsets.all(10.0),
             child:new Column(
@@ -17,15 +37,15 @@ class Item extends StatelessWidget {
                         children: <Widget>[
                             new Container(
                                 margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
-                                child: new Image.network(
-                                    item['pImg'],
-                                    width:140.0,
-                                    height:140.0,
-                                ),
+                                width:wdith,
+                                height:height,
+                                child: new Stack(
+                                    children: stackImg,
+                                ), 
                             ),
                             new Container(
                                 width:230.0,
-                                height:140.0,
+                                height:height,
                                 child: new Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: <Widget>[

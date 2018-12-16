@@ -17,7 +17,7 @@ class __HomePageState extends State<HomePage>{
             ),
 			home:new Scaffold(
 				appBar: AppBar(
-					title: Text('Home Page'),
+					title: Text('首页'),
 				),
 				body:new Column(
                     children: <Widget>[
