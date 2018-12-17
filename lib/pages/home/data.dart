@@ -25,7 +25,7 @@ List<Map> itemListDatas = [
         'pImg':'https://img.allpyra.com/d00f6039-e6bf-403c-969b-ad466ac3afca.png?imageView2/2/w/300',
         'label':'秒杀',
         'title':'广州增城杨桃（2斤±2两）',
-        'desc':'非常好吃！',
+        'desc':'',
         'totalCount':200,
         'haveCount':100,
         'costPrice':20,

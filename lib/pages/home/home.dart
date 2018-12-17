@@ -44,7 +44,9 @@ class __ItemListState extends State<ItemList>{
     @override
 	Widget build(BuildContext context) {
         List<Widget> list = [];
-        for (var i = 0; i < itemListDatas.length; i++) {
+        int len = itemListDatas.length;
+        for (var i = 0; i < len; i++) {
+            itemListDatas[i]['isLastOne'] = i == len-1 ? true : false;
             list.add(new Item(item:itemListDatas[i]));
         }
         return new Container(
