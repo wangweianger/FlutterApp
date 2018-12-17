@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../utils/adapt.dart';
 import 'swiper.dart';
 import 'goods_item.dart';
 
@@ -11,6 +12,7 @@ class HomePage extends StatefulWidget {
 class __HomePageState extends State<HomePage>{
 	@override
 	Widget build(BuildContext context) {
+        Adapt.init(context, width:750);
 		return new MaterialApp(
             theme: new ThemeData(
                 primarySwatch: Colors.red,
@@ -23,7 +25,7 @@ class __HomePageState extends State<HomePage>{
                     children: <Widget>[
                         // banner
                         new Container(
-                            height:180.0,
+                            height:Adapt.px(300),
                             child:new HomeSwiper(bannerList:bannerList),
                         ),
                         // list
@@ -50,7 +52,7 @@ class __ItemListState extends State<ItemList>{
             list.add(new Item(item:itemListDatas[i]));
         }
         return new Container(
-            height:500.0,
+            height:Adapt.getHeight(300),
             child: ListView(
                 shrinkWrap: true, 
                 children: list,
