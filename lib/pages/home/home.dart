@@ -12,7 +12,6 @@ class HomePage extends StatefulWidget {
 class __HomePageState extends State<HomePage>{
 	@override
 	Widget build(BuildContext context) {
-        Adapt.init(context, width:750);
 		return new MaterialApp(
             theme: new ThemeData(
                 primarySwatch: Colors.red,
@@ -21,17 +20,7 @@ class __HomePageState extends State<HomePage>{
 				appBar: AppBar(
 					title: Text('首页'),
 				),
-				body:new Column(
-                    children: <Widget>[
-                        // banner
-                        new Container(
-                            height:Adapt.px(300),
-                            child:new HomeSwiper(bannerList:bannerList),
-                        ),
-                        // list
-                        new ItemList(),
-                    ],
-                ),
+				body:new ItemList(),
 		    ),
         );
 	}
@@ -45,19 +34,21 @@ class ItemList extends StatefulWidget {
 class __ItemListState extends State<ItemList>{
     @override
 	Widget build(BuildContext context) {
-        List<Widget> list = [];
+        List<Widget> list = [
+            // banner
+            new Container(
+                height:Adapt.px(300),
+                child:new HomeSwiper(bannerList:bannerList),
+            ),
+        ];
         int len = itemListDatas.length;
         for (var i = 0; i < len; i++) {
             itemListDatas[i]['isLastOne'] = i == len-1 ? true : false;
             list.add(new Item(item:itemListDatas[i]));
         }
-        return new Container(
-            height:Adapt.getHeight(300),
-            child: ListView(
-                shrinkWrap: true, 
-                children: list,
-            )
+        return ListView(
+            shrinkWrap: true, 
+            children: list,
         ); 
-        
     }
 }

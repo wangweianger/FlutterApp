@@ -10,8 +10,6 @@ class Item extends StatelessWidget {
 
     @override
     Widget build(BuildContext context) {
-        Adapt.init(context, width:750);
-
         double wdith = Adapt.px(260);
         double height = Adapt.px(260);
         // item 左侧图片层叠
@@ -124,8 +122,6 @@ class Item extends StatelessWidget {
                                                         shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(Adapt.px(30),)),
                                                         onPressed: () {
                                                             print(new Size.fromHeight(kToolbarHeight));
-                                                            print(new Size.fromHeight(kBottomNavigationBarHeight));
-                                                            print(new Size.fromHeight(kTextTabBarHeight));
                                                             print(MediaQueryData.fromWindow(window));
                                                             print(MediaQuery.of(context));
                                                             print(item);
