@@ -3,6 +3,7 @@ import '../../utils/adapt.dart';
 import 'top_address.dart';
 import 'swiper.dart';
 import 'goods_item.dart';
+import 'top_nav.dart';
 
 import 'data.dart';
 
@@ -24,6 +25,7 @@ class __HomePageState extends State<HomePage>{
 				body:new Column (
                     children: <Widget>[
                         new Address(),
+                        new TopNav(),
                         new Expanded(
                             child: new ItemList(),
                         ) 

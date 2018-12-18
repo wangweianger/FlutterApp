@@ -1,4 +1,38 @@
 
+// top nav
+List<Map> topNavList = [
+    {
+        'name':'热卖',
+        'isActive':true,
+        'acode':'ADBD'
+    },
+    {
+        'name':'水果',
+        'isActive':false,
+        'acode':'ADBD'
+    },
+    {
+        'name':'生鲜',
+        'isActive':false,
+        'acode':'ADBD'
+    },
+    {
+        'name':'日用',
+        'isActive':false,
+        'acode':'ADBD'
+    },
+    {
+        'name':'食品',
+        'isActive':false,
+        'acode':'ADBD'
+    },
+    {
+        'name':'粮油',
+        'isActive':false,
+        'acode':'ADBD'
+    },
+];
+
 // banner list
 List<Map> bannerList = [
     {

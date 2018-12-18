@@ -12,8 +12,7 @@ class _AddressState extends State<Address> {
         String address = '深圳软件产业基地易思博大厦19-21楼';
 
         return new Container(
-            height:Adapt.px(90),
-            margin:EdgeInsets.only(bottom:Adapt.px(10)),
+            height:Adapt.px(80),
             padding:EdgeInsets.only(left:Adapt.px(30),right:Adapt.px(30)),
             alignment: Alignment.centerLeft,
             child:new Row(
