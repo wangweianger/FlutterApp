@@ -60,7 +60,7 @@ class Item extends StatelessWidget {
                                         child: new Text(
                                             item['title'],
                                             maxLines: 2,
-                                            overflow: TextOverflow.clip,
+                                            overflow: TextOverflow.ellipsis,
                                             style:TextStyle(
                                                 fontSize: Adapt.px(30),
                                             )
