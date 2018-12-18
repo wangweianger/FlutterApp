@@ -25,5 +25,5 @@ https://pub.dartlang.org/
 ### DEMO图片
 ### iphone效果
 ![](https://github.com/wangweianger/FlutterApp/blob/master/demo/01.png "")
-### 安装真机效果
+### android真机效果
 ![](https://github.com/wangweianger/FlutterApp/blob/master/demo/02.jpg "")
