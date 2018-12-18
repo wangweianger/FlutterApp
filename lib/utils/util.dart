@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void _showMessage(BuildContext context,String name,callback) {
+void showMessage(BuildContext context,String name,callback) {
     showDialog<Null>(
         context: context,
         child: new AlertDialog(
