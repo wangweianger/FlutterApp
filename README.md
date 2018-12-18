@@ -10,6 +10,9 @@ install packages
 flutter run
 ```
 
+## utils/adapt.dart
+手机屏幕适配，设计原稿默认750px
+
 ## Flutter - Beautiful native apps in record time
 https://flutter.io/
 
