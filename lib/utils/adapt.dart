@@ -2,15 +2,13 @@ import 'package:flutter/material.dart';
 import 'config.dart';
 import 'dart:ui';
 
-final device = MediaQuery.of(null);
-
 class Adapt {
 
     static MediaQueryData mediaQuery = MediaQueryData.fromWindow(window);
     static double _width = mediaQuery.size.width;
-    static double _height = mediaQuery.size.height;
-    static double _topbarH = mediaQuery.padding.top;
-    static double _botbarH = mediaQuery.padding.bottom;
+    // static double _height = mediaQuery.size.height;
+    // static double _topbarH = mediaQuery.padding.top;
+    // static double _botbarH = mediaQuery.padding.bottom;
     static double _pixelRatio = mediaQuery.devicePixelRatio;
     static double _ratio = _width / designWidth;
 

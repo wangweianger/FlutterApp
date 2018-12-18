@@ -1,6 +1,6 @@
 
 // banner list
-final bannerList = [
+List<Map> bannerList = [
     {
         'url':'https://img.allpyra.com/eb1de7d2-ac63-4a3b-a76e-24ec76e39732.jpg?imageView2/2/w/750',
     },

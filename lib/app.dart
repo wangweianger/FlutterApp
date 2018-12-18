@@ -31,21 +31,21 @@ class _MyAppBarState extends State<MyAppBar> {
 		final BottomNavigationBar bottomNavigationBar = new BottomNavigationBar(
 			items: <BottomNavigationBarItem>[
 				new BottomNavigationBarItem(
-					icon: Icon(Icons.home,size:35.0),title: new Text('首页'),
+					icon: Icon(Icons.home),title: new Text('首页'),
 				),
 				new BottomNavigationBarItem(
-					icon: Icon(Icons.shopping_cart,size:35.0), title: new Text('购物车')
+					icon: Icon(Icons.shopping_cart), title: new Text('购物车')
 				),
 				new BottomNavigationBarItem(
-					icon: Icon(Icons.assignment_ind,size:32.0), title: new Text('订单')
+					icon: Icon(Icons.assignment_ind,size:26.0), title: new Text('订单')
 				),
                 new BottomNavigationBarItem(
-					icon: Icon(Icons.person,size:35.0), title: new Text('我的')
+					icon: Icon(Icons.person), title: new Text('我的')
 				),
 			],
 			type: BottomNavigationBarType.fixed,
 			currentIndex: _currentIndex,
-			iconSize: 35.0,
+			iconSize: 30.0,
             fixedColor:Colors.red,
 			onTap: (int index) {
 				setState((){

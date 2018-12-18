@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../utils/adapt.dart';
-import 'dart:ui';
 
 // item
 class Item extends StatelessWidget {
@@ -121,9 +120,6 @@ class Item extends StatelessWidget {
                                                         child: new Icon(Icons.shopping_cart,color:Colors.white,size:Adapt.px(30)),
                                                         shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(Adapt.px(30),)),
                                                         onPressed: () {
-                                                            print(new Size.fromHeight(kToolbarHeight));
-                                                            print(MediaQueryData.fromWindow(window));
-                                                            print(MediaQuery.of(context));
                                                             print(item);
                                                         },
                                                     ),
