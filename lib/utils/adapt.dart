@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'config.dart';
 import 'dart:ui';
 
 class Adapt {
@@ -10,11 +11,11 @@ class Adapt {
     static double _pixelRatio = mediaQuery.devicePixelRatio;
     static var _ratio;
     static init(int number){
-        int uiwidth = number is int ? number : 750;
+        int uiwidth = number is int ? number : designWidth;
         _ratio = _width / uiwidth;
     }
     static px(number){
-        if(!(_ratio is double || _ratio is int)){Adapt.init(750);}
+        if(!(_ratio is double || _ratio is int)){Adapt.init(designWidth);}
         return number * _ratio;
     }
     static onepx(){
