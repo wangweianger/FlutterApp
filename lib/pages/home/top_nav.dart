@@ -15,7 +15,7 @@ class _TopNavState extends State<TopNav> {
             alignment: Alignment.centerLeft,
             padding:EdgeInsets.only(left:Adapt.px(30),right:Adapt.px(30)),
             decoration: new BoxDecoration(
-                border: new Border(bottom:BorderSide(width: Adapt.onepx(),color:Colors.grey[600])),
+                border: new Border(bottom:BorderSide(width: Adapt.onepx(),color:Colors.grey[300])),
             ),
             child: new ListView.builder(
                 scrollDirection: Axis.horizontal,

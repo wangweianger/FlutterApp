@@ -21,6 +21,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   english_words: ^3.1.5
   flutter_swiper : ^1.1.4
+  pull_to_refresh: ^1.1.6
 
 dev_dependencies:
   flutter_test:

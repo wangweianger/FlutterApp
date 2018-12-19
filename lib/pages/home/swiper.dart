@@ -19,9 +19,9 @@ class HomeSwiper extends StatelessWidget {
             itemCount: bannerList.length,
             loop:true,
             pagination: new SwiperPagination(),
-            control: new SwiperControl(
-                color:Colors.white,
-            ),
+            // control: new SwiperControl(
+            //     color:Colors.white,
+            // ),
         );
     }
 }
