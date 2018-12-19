@@ -22,7 +22,8 @@ class _TopNavState extends State<TopNav> {
                 itemCount: topNavList.length,
                 itemBuilder: (context, i){
                     return new Container(
-                        padding: EdgeInsets.only(left:Adapt.px(20),right:Adapt.px(20),top:Adapt.px(10),bottom:Adapt.px(10)),
+                        height:Adapt.px(65),
+                        padding: EdgeInsets.all(Adapt.px(10)),
                         margin:EdgeInsets.only(right:10),
                         decoration: new BoxDecoration(
                             border: new Border(bottom:BorderSide(width: 3,color:topNavList[i]['isActive'] ? Colors.red : Colors.transparent)),

@@ -39,7 +39,7 @@ class _AddressState extends State<Address> {
                             margin:EdgeInsets.only(left:Adapt.px(10)),
                             height:Adapt.px(60),
                             decoration: new BoxDecoration(
-                                border: new Border.all(color:Colors.red,style:BorderStyle.solid),
+                                border: new Border.all(color:Colors.red,style:BorderStyle.solid,width:Adapt.onepx()),
                                 borderRadius: BorderRadius.circular(Adapt.px(60))
                             ),
                             child:TextField(
@@ -48,7 +48,7 @@ class _AddressState extends State<Address> {
                                 decoration: InputDecoration(
                                     hintText: "搜索商品",
                                     hintStyle: TextStyle(color:Colors.red,fontSize: Adapt.px(24)),
-                                    prefixIcon: Icon(Icons.search,color:Colors.red),
+                                    prefixIcon: Icon(Icons.search,color:Colors.red,size:Adapt.px(30)),
                                     contentPadding:EdgeInsets.all(Adapt.px(8)),
                                     border:InputBorder.none
                                 ),
