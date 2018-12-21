@@ -23,7 +23,7 @@ class __SgoppingCartState extends State<SgoppingCart>{
 				body:new Column(
                     children: <Widget>[
                         Expanded(child: new ItemList()),
-                        new SubmitBottom(),
+                        new Container(margin:EdgeInsets.only(left:Adapt.px(30)),child: new SubmitBottom()),
                     ],
                 ),
 			),
@@ -44,10 +44,13 @@ class __SubmitBottomState extends State<SubmitBottom>{
                 Expanded(
                     child: new Row(
                         children: <Widget>[
-                            new Image.network(
-                                'https://img.allpyra.com/17763f04-254b-46ae-9cec-a5e48ab14394.png?imageslim',
-                                width:Adapt.px(46),
-                                height:Adapt.px(46),
+                            new GestureDetector(
+                                onTap: (){},
+                                child: new Image.network(
+                                    'https://img.allpyra.com/17763f04-254b-46ae-9cec-a5e48ab14394.png?imageslim',
+                                    width:Adapt.px(46),
+                                    height:Adapt.px(46),
+                                ),
                             ),
                             new Text(
                                 '全选',
